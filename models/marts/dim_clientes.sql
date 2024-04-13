@@ -5,7 +5,7 @@ with
     )
     , criar_chave as (
         select
-            row_number() over(order by id_cliente) as pk_cliente
+             row_number() over(order by id_cliente) as pk_cliente
             , id_cliente
             , nome_cliente
             , empresa_cliente
